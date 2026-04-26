@@ -1,44 +1,44 @@
 const posts = [
   {
     date: '1 abril, 2026',
-    title: 'Dolor de espalda en Leganés: tratamiento, causas y cuándo acudir a un especialista',
+    title: 'Logopedia infantil en Parla: cuándo acudir a un especialista',
     excerpt:
-      'El dolor de espalda es una de las molestias más habituales. En este artículo te explicamos sus causas más frecuentes, cuándo debes acudir a un fisioterapeuta y qué tratamientos pueden ayudarte a recuperarte.',
+      'Te explicamos qué señales pueden indicar dificultades en el lenguaje, el habla o la comunicación y cómo una intervención temprana puede ayudar al desarrollo del niño.',
     image:
-      'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80',
     href: '#',
   },
   {
     date: '1 abril, 2026',
-    title: 'Fisioterapia en Leganés: cómo elegir fisioterapeuta y qué tratamientos funcionan',
+    title: 'Psicología infantil y adolescente: cómo acompañar las emociones',
     excerpt:
-      'Elegir un buen profesional marca la diferencia. Te contamos qué debes tener en cuenta a la hora de buscar fisioterapeuta, qué señales indican un tratamiento de calidad y cómo encontrar la mejor opción para ti.',
+      'La infancia y la adolescencia pueden traer cambios emocionales importantes. Descubre cuándo pedir ayuda y cómo el apoyo psicológico puede mejorar el bienestar familiar.',
     image:
-      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=80',
     href: '#',
   },
   {
     date: '25 marzo, 2026',
-    title: 'Sesiones de fisioterapia: ¿cuántas sesiones son necesarias?',
+    title: 'Atención temprana: qué es y por qué es tan importante',
     excerpt:
-      'Cada caso es diferente. Descubre qué factores influyen en el número de sesiones recomendadas, cómo se adapta el tratamiento a cada paciente y qué puedes esperar durante el proceso de recuperación.',
+      'La atención temprana favorece el desarrollo global en los primeros años de vida. Conoce sus beneficios y cómo puede apoyar a niños y familias.',
     image:
-      'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=1200&q=80',
     href: '#',
   },
 ]
 
 const BlogSection = () => {
   return (
-    <section className="bg-[#f5f5f3] py-20">
+    <section className="bg-[#fff7fb] py-20">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-[#8F1747] sm:text-4xl">
             Blog
           </h2>
 
           <p className="mt-4 text-lg text-neutral-600">
-            Artículos y consejos para cuidar tu salud física y bienestar
+            Consejos y recursos sobre logopedia, psicología, atención temprana y desarrollo infantil
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const BlogSection = () => {
           {posts.map((post, index) => (
             <article
               key={index}
-              className="overflow-hidden rounded-xl bg-white shadow-[0_8px_24px_rgba(0,0,0,0.08)]"
+              className="overflow-hidden rounded-xl bg-white shadow-[0_10px_30px_rgba(210,51,114,0.12)] transition hover:shadow-[0_15px_40px_rgba(210,51,114,0.18)]"
             >
               <div className="h-56 overflow-hidden">
                 <img
@@ -59,7 +59,7 @@ const BlogSection = () => {
               <div className="p-6">
                 <p className="text-sm text-neutral-500">📅 {post.date}</p>
 
-                <h3 className="mt-4 text-2xl font-extrabold leading-tight text-black">
+                <h3 className="mt-4 text-2xl font-extrabold leading-tight text-[#8F1747]">
                   {post.title}
                 </h3>
 
@@ -70,7 +70,7 @@ const BlogSection = () => {
                 <div className="mt-6 flex justify-end">
                   <a
                     href={post.href}
-                    className="inline-flex items-center gap-2 text-lg font-medium text-[#E4B525] transition hover:text-black"
+                    className="inline-flex items-center gap-2 text-lg font-medium text-[#D23372] transition hover:text-[#8F1747]"
                   >
                     Leer más <span className="text-2xl">›</span>
                   </a>

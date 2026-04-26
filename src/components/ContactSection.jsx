@@ -2,110 +2,116 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa'
 
 const ContactSection = () => {
   return (
-    <section id="contacto" className="scroll-mt-28 bg-[#f5f5f3] py-24">
+    <section id="contacto" className="scroll-mt-28 bg-[#fff7fb] py-24">
       <div className="mx-auto max-w-4xl px-4">
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-[#8F1747] sm:text-4xl">
             Contacto
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-neutral-600">
-            Estamos aquí para ayudarte. Contáctanos para reservar una cita o solicitar más información.
+            Estamos aquí para ayudarte. Contáctanos para resolver dudas o solicitar información.
           </p>
         </div>
 
         <div className="space-y-5">
-          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_6px_18px_rgba(0,0,0,0.06)]">
-            <div className="pt-1 text-xl text-[#E4B525]">
+          
+          {/* Dirección */}
+          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(210,51,114,0.12)]">
+            <div className="pt-1 text-xl text-[#D23372]">
               <FaMapMarkerAlt />
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-black">Dirección</h3>
+              <h3 className="text-xl font-bold text-[#8F1747]">Dirección</h3>
               <p className="mt-2 text-lg leading-8 text-neutral-600">
-                C. de Polvoranca, 21, Local, 28911 Leganés, Madrid
+                Calle de Ciudad Real, 6, 28980 Parla, Madrid
               </p>
             </div>
           </div>
 
-          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_6px_18px_rgba(0,0,0,0.06)]">
-            <div className="pt-1 text-xl text-[#E4B525]">
+          {/* Teléfono */}
+          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(210,51,114,0.12)]">
+            <div className="pt-1 text-xl text-[#D23372]">
               <FaPhoneAlt />
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-black">Teléfono</h3>
+              <h3 className="text-xl font-bold text-[#8F1747]">Teléfono</h3>
               <a
-                href="tel:637883587"
-                className="mt-2 block text-lg leading-8 text-neutral-600 transition hover:text-black"
+                href="tel:627408088"
+                className="mt-2 block text-lg leading-8 text-neutral-600 transition hover:text-[#D23372]"
               >
-                637883587
+                627 408 088
               </a>
             </div>
           </div>
 
-          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_6px_18px_rgba(0,0,0,0.06)]">
-            <div className="pt-1 text-xl text-[#E4B525]">
+          {/* Email */}
+          <div className="flex gap-5 rounded-xl bg-white px-6 py-6 shadow-[0_10px_30px_rgba(210,51,114,0.12)]">
+            <div className="pt-1 text-xl text-[#D23372]">
               <FaEnvelope />
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-black">Email</h3>
+              <h3 className="text-xl font-bold text-[#8F1747]">Email</h3>
               <a
-                href="mailto:info@fisioprotemaleganes.es"
-                className="mt-2 block text-lg leading-8 text-neutral-600 transition hover:text-black"
+                href="mailto:info@edukatekparla.es"
+                className="mt-2 block text-lg leading-8 text-neutral-600 transition hover:text-[#D23372]"
               >
-                info@fisioprotemaleganes.es
+                info@edukatekparla.es
               </a>
             </div>
           </div>
 
-          <div className="flex gap-5 rounded-xl bg-[#f8f1d6] px-6 py-6 shadow-[0_8px_24px_rgba(0,0,0,0.06)]">
-            <div className="pt-1 text-xl text-[#E4B525]">
+          {/* Horario */}
+          <div className="flex gap-5 rounded-xl bg-[#f7d8e6] px-6 py-6 shadow-[0_10px_30px_rgba(210,51,114,0.12)]">
+            <div className="pt-1 text-xl text-[#D23372]">
               <FaClock />
             </div>
 
             <div className="w-full">
-              <h3 className="text-xl font-bold text-black">Horario</h3>
+              <h3 className="text-xl font-bold text-[#8F1747]">Horario</h3>
 
               <div className="mt-4 space-y-3 text-lg text-neutral-700">
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div className="flex justify-between">
                   <span className="font-semibold">Lunes</span>
-                  <span>10:00–13:00 · 16:00–20:30</span>
+                  <span>10:00–20:30</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div className="flex justify-between">
                   <span className="font-semibold">Martes</span>
-                  <span>10:00–13:00 · 16:00–20:30</span>
+                  <span>9:00–20:30</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div className="flex justify-between">
                   <span className="font-semibold">Miércoles</span>
-                  <span>10:00–13:00 · 16:00–20:30</span>
+                  <span>10:00–20:30</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div className="flex justify-between">
                   <span className="font-semibold">Jueves</span>
-                  <span>10:00–13:00 · 16:00–20:30</span>
+                  <span>9:00–20:30</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div className="flex justify-between">
                   <span className="font-semibold">Viernes</span>
-                  <span>10:00–13:00 · 14:30–20:30</span>
+                  <span>11:00–19:30</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div className="flex justify-between">
                   <span className="font-semibold">Sábado</span>
                   <span>Cerrado</span>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between">
+                <div className="flex justify-between">
                   <span className="font-semibold">Domingo</span>
                   <span>Cerrado</span>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -1,36 +1,37 @@
 const reviews = [
   {
-    text: 'Excelente atención desde el momento de pedir la cita hasta la consulta de fisioterapia. Diagnóstico y tratamiento de 10, para mí se han convertido en mi centro de fisioterapia de confianza desde que acudí la primera vez hace años. Precios asequibles/ajustados, aún más teniendo en cuenta la calidad del servicio. Más que recomendadas.',
-    name: 'Alba',
-    time: 'Hace 1 año',
+    text: 'Desde el primer día nos sentimos muy acompañados. Han ayudado muchísimo a nuestro hijo con el lenguaje y la comunicación. El trato es cercano, profesional y muy humano. Sin duda, un centro totalmente recomendable.',
+    name: 'María G.',
+    time: 'Hace 2 meses',
   },
   {
-    text: 'Tenía un dolor molesto en la zona de la espalda y me lo han tratado muy bien. Estoy muy contento con la forma de trabajar. Primero me explicaron el problema y luego detectaron dónde estaba el problema. Método científico aplicado al dedillo. Muy profesional, amable y simpática. Me sentí muy seguro en todo el proceso. Volveré.',
-    name: 'K. Meneses',
+    text: 'Acudí por recomendación y ha sido un acierto. Me han ayudado a gestionar la ansiedad y mejorar mi bienestar emocional. Grandes profesionales, muy cercanos y atentos en todo momento.',
+    name: 'Carlos R.',
+    time: 'Hace 1 mes',
+  },
+  {
+    text: 'Un equipo increíble. Nos orientan en todo momento como familia y vemos avances reales en nuestro hijo. Se nota que trabajan con vocación y mucha dedicación.',
+    name: 'Laura P.',
     time: 'Hace 3 meses',
-  },
-  {
-    text: 'Me siento afortunada de haber encontrado un grupo de profesionales que se ocupan en ayudar a las personas a escuchar su cuerpo y dichos profesionales enseñan métodos para que cada uno sea capaz de cuidarse. Los felicito por su buen hacer y les doy las gracias por ayudarme.',
-    name: 'P. Fernández',
-    time: 'Hace 1 año',
   },
 ]
 
 const Testimonials = () => {
   return (
-    <section className="bg-[#eef0f1] py-24">
+    <section className="bg-[#fff7fb] py-24">
       <div className="mx-auto max-w-7xl px-4">
+        
         <div className="mx-auto mb-14 max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
-            Lo que dicen nuestros pacientes
+          <h2 className="text-3xl font-extrabold text-[#8F1747] sm:text-4xl">
+            Lo que dicen nuestras familias
           </h2>
 
-          <div className="mt-5 text-2xl tracking-[0.2em] text-[#E4B525]">
+          <div className="mt-5 text-2xl tracking-[0.2em] text-[#D23372]">
             ★★★★★
           </div>
 
           <p className="mt-4 text-lg text-neutral-600">
-            Valoración 5.0 en Google Reviews
+            Valoración excelente basada en la confianza de nuestros pacientes
           </p>
         </div>
 
@@ -38,9 +39,9 @@ const Testimonials = () => {
           {reviews.map((review, index) => (
             <article
               key={index}
-              className="flex min-h-[340px] flex-col rounded-xl bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.08)] sm:min-h-[360px] sm:p-7"
+              className="flex min-h-[340px] flex-col rounded-xl bg-white p-6 shadow-[0_10px_30px_rgba(210,51,114,0.12)] sm:min-h-[360px] sm:p-7 transition hover:shadow-[0_15px_40px_rgba(210,51,114,0.18)]"
             >
-              <div className="mb-5 text-lg tracking-[0.18em] text-[#E4B525] sm:text-xl">
+              <div className="mb-5 text-lg tracking-[0.18em] text-[#D23372] sm:text-xl">
                 ★★★★★
               </div>
 
@@ -49,7 +50,7 @@ const Testimonials = () => {
               </p>
 
               <div className="mt-6 sm:mt-8">
-                <p className="text-lg font-bold text-black sm:text-xl">
+                <p className="text-lg font-bold text-[#8F1747] sm:text-xl">
                   {review.name}
                 </p>
                 <p className="mt-1 text-sm text-neutral-500">{review.time}</p>
@@ -57,6 +58,7 @@ const Testimonials = () => {
             </article>
           ))}
         </div>
+
       </div>
     </section>
   )

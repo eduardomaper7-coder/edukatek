@@ -1,57 +1,55 @@
 const services = [
   {
-    title: 'Fisioterapia General',
+    title: 'Logopedia',
     description:
-      'Recuperar todo tipo de patologías del aparato locomotor en la mayor brevedad posible y evitar su recurrencia es nuestro principal propósito.',
+      'Evaluación e intervención en dificultades del habla, lenguaje, comunicación, voz, lectura, escritura y deglución, tanto en niños como en adultos.',
     image:
-      'https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80',
   },
   {
-    title: 'Suelo Pélvico',
+    title: 'Psicología infantil, adolescentes y adultos',
     description:
-      'Realizamos una valoración fisioterapéutica para tratar o prevenir alteraciones del suelo pélvico en hombres y mujeres.',
+      'Acompañamiento psicológico personalizado para trabajar emociones, conducta, autoestima, ansiedad, dificultades familiares y bienestar personal.',
     image:
-      'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=900&q=80',
   },
   {
-    title: 'Fisioterapia Respiratoria Infantil',
+    title: 'Atención Temprana',
     description:
-      'Ayudamos a mejorar la respiración de los niños con técnicas para eliminar mucosidad y mejorar la ventilación.',
+      'Intervención especializada para favorecer el desarrollo global de los niños en sus primeras etapas, apoyando también a las familias.',
+    image:
+      'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    title: 'Psicomotricidad y estimulación sensorial',
+    description:
+      'Sesiones orientadas a mejorar la coordinación, el movimiento, la autonomía, la integración sensorial y el desarrollo corporal del niño.',
     image:
       'https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    title: 'Rehabilitación y descanso',
-    description:
-      'Tratamientos enfocados a mejorar tu descanso y bienestar general con técnicas manuales especializadas.',
-    image:
-      'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80',
   },
 ]
 
 const Treatments = () => {
   return (
-    <section id="servicios" className="scroll-mt-28 bg-[#f5f5f3] py-24">
+    <section id="servicios" className="scroll-mt-28 bg-[#fff7fb] py-24">
       <div className="mx-auto max-w-7xl px-4">
-        {/* Título */}
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-extrabold text-[#E4B525] sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-[#D23372] sm:text-4xl">
             Nuestros servicios
           </h2>
 
-          <p className="mt-4 text-lg sm:text-xl text-neutral-600">
-            Ofrecemos una amplia gama de tratamientos personalizados para mejorar tu salud y bienestar.
+          <p className="mt-4 text-lg text-neutral-600 sm:text-xl">
+            Terapias personalizadas para acompañar el desarrollo, la comunicación
+            y el bienestar emocional de niños, adolescentes, adultos y familias.
           </p>
         </div>
 
-        {/* Grid */}
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition hover:shadow-[0_15px_40px_rgba(0,0,0,0.12)]"
+              className="flex overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(210,51,114,0.12)] transition hover:shadow-[0_15px_40px_rgba(210,51,114,0.18)]"
             >
-              {/* Imagen */}
               <div className="w-[40%]">
                 <img
                   src={service.image}
@@ -60,23 +58,21 @@ const Treatments = () => {
                 />
               </div>
 
-              {/* Texto */}
               <div className="flex w-[60%] flex-col justify-between p-6">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-black">
+                  <h3 className="text-xl font-extrabold text-[#8F1747] sm:text-2xl">
                     {service.title}
                   </h3>
 
-                  <p className="mt-3 text-base sm:text-lg leading-8 text-neutral-600">
+                  <p className="mt-3 text-base leading-8 text-neutral-600 sm:text-lg">
                     {service.description}
                   </p>
                 </div>
 
-                {/* Botón */}
                 <div className="mt-6">
                   <a
                     href="#contacto"
-                    className="inline-flex items-center gap-2 text-base font-semibold text-[#E4B525] transition hover:text-black"
+                    className="inline-flex items-center gap-2 text-base font-semibold text-[#D23372] transition hover:text-[#8F1747]"
                   >
                     Más información →
                   </a>

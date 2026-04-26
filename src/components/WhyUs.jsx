@@ -3,15 +3,15 @@ import { useEffect, useState } from 'react'
 const slides = [
   {
     image:
-      'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Doctora sonriendo en clínica',
-    badge: 'Profesionalidad y atención personalizada',
+      'https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Sesión de terapia infantil',
+    badge: 'Atención cercana para niños y familias',
   },
   {
     image:
-      'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Doctor profesional en consulta',
-    badge: 'Calidad asistencial y experiencia clínica',
+      'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Niños trabajando en una actividad educativa',
+    badge: 'Desarrollo, comunicación y bienestar',
   },
 ]
 
@@ -27,75 +27,70 @@ const WhyUs = () => {
   }, [])
 
   return (
-    <section className="bg-[#eef0f1] py-24">
+    <section className="bg-[#fff7fb] py-24">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-4 lg:grid-cols-2">
-        
-        {/* IZQUIERDA */}
         <div className="relative">
-          <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-[#E4B525] lg:block [writing-mode:vertical-rl]">
-            Fisioprotema
+          <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-[#D23372] lg:block [writing-mode:vertical-rl]">
+            EDUKATEK
           </span>
 
           <div className="max-w-xl">
-            <span className="inline-block rounded-full bg-[#E4B525] px-5 py-2 text-sm font-bold text-black">
+            <span className="inline-block rounded-full bg-[#D23372] px-5 py-2 text-sm font-bold text-white">
               Nuestro valor
             </span>
 
-            <h2 className="mt-5 text-4xl font-extrabold leading-tight text-black sm:text-5xl">
-              ¿Por qué elegir Fisioprotema?
+            <h2 className="mt-5 text-4xl font-extrabold leading-tight text-[#8F1747] sm:text-5xl">
+              ¿Por qué elegir nuestro centro?
             </h2>
 
             <p className="mt-6 text-lg leading-9 text-neutral-700">
-              En Fisioprotema no solo tratamos lesiones, nos enfocamos en mejorar tu
-              calidad de vida. Cada paciente recibe una atención personalizada,
-              adaptada a sus necesidades reales.
+              Acompañamos a cada persona y familia con una intervención cercana,
+              profesional y adaptada a sus necesidades reales, cuidando tanto el
+              desarrollo como el bienestar emocional.
             </p>
 
             <div className="mt-10 space-y-8">
-              
               <div>
-                <h3 className="text-2xl font-extrabold text-[#E4B525]">
-                  Atención 100% personalizada
+                <h3 className="text-2xl font-extrabold text-[#D23372]">
+                  Atención personalizada
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Diseñamos cada tratamiento en función de tu problema específico.
+                  Diseñamos cada intervención según la edad, necesidades y objetivos de cada persona.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-[#E4B525]">
-                  Experiencia y profesionalidad
+                <h3 className="text-2xl font-extrabold text-[#D23372]">
+                  Equipo especializado
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Contamos con especialistas cualificados y en constante formación.
+                  Contamos con profesionales en logopedia, psicología y atención temprana.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-[#E4B525]">
-                  Resultados desde la primera sesión
+                <h3 className="text-2xl font-extrabold text-[#D23372]">
+                  Trabajo con familias
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Aplicamos técnicas eficaces para notar mejoría rápidamente.
+                  Orientamos y acompañamos a las familias durante todo el proceso terapéutico.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-[#E4B525]">
+                <h3 className="text-2xl font-extrabold text-[#D23372]">
                   Trato cercano y humano
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Nos implicamos contigo en todo el proceso de recuperación.
+                  Creamos un espacio seguro, amable y de confianza para niños, adolescentes y adultos.
                 </p>
               </div>
-
             </div>
           </div>
         </div>
 
-        {/* DERECHA - SLIDER */}
         <div className="relative">
-          <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(0,0,0,0.18)]">
+          <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(210,51,114,0.18)]">
             <div className="relative h-[540px] w-full">
               {slides.map((slide, index) => (
                 <img
@@ -110,17 +105,17 @@ const WhyUs = () => {
                 />
               ))}
 
-              <div className="absolute inset-0 bg-black/20"></div>
+              <div className="absolute inset-0 bg-[#D23372]/20"></div>
 
               <div className="absolute left-6 top-6 z-10 max-w-sm rounded-2xl bg-white/95 px-5 py-4 shadow-lg backdrop-blur-sm">
-                <p className="text-base font-bold leading-7 text-black">
+                <p className="text-base font-bold leading-7 text-[#8F1747]">
                   {slides[currentSlide].badge}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-[28px] bg-[#E4B525]"></div>
+          <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-[28px] bg-[#D23372]"></div>
 
           <div className="mt-6 flex items-center justify-center gap-3">
             {slides.map((_, index) => (
@@ -129,7 +124,7 @@ const WhyUs = () => {
                 type="button"
                 onClick={() => setCurrentSlide(index)}
                 className={`h-3 w-3 rounded-full transition ${
-                  currentSlide === index ? 'bg-[#E4B525]' : 'bg-black/20'
+                  currentSlide === index ? 'bg-[#D23372]' : 'bg-black/20'
                 }`}
                 aria-label={`Ir a imagen ${index + 1}`}
               />
