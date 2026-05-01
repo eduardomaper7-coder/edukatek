@@ -7,11 +7,14 @@ const Hero = () => {
   const phoneDisplay = '627 40 80 88'
 
   const whatsappMessage = encodeURIComponent(
-    'Hola, me gustaría recibir información sobre vuestros servicios (Centro de Estudios / Centro Sociosanitario).'
+    'Hola, me gustaría recibir información sobre vuestros servicios de Edukatek Parla.'
   )
 
   return (
-    <section id="inicio" className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section
+      id="inicio"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden"
+    >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-fixed"
         style={{
@@ -35,25 +38,35 @@ const Hero = () => {
         </h1>
 
         <p className="mt-8 max-w-3xl text-lg leading-9 text-white/95 sm:text-xl">
-          Dos centros especializados para acompañar a niños, adolescentes y familias:
-          apoyo educativo y atención sociosanitaria profesional.
+          Dos centros especializados en Parla: logopedia, psicología y atención
+          temprana, y apoyo escolar, inglés y técnicas de estudio.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <HashLink
             smooth
             to="/centro-estudios#centro-estudios"
-            className="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-lg font-bold text-[#D23372] transition hover:bg-white/90"
+            className="inline-flex flex-col items-center justify-center rounded-xl bg-white px-8 py-4 text-center transition hover:bg-white/90"
           >
-            Centro de Estudios
+            <span className="text-lg font-bold text-[#8F1747]">
+              Centro de Estudios
+            </span>
+            <span className="text-sm font-semibold text-[#D23372]">
+              Apoyo escolar, inglés y técnicas de estudio
+            </span>
           </HashLink>
 
           <HashLink
             smooth
             to="/centro-sociosanitario#centro-sociosanitario"
-            className="inline-flex items-center justify-center rounded-xl bg-[#8F1747] px-8 py-4 text-lg font-bold text-white transition hover:bg-[#73133a]"
+            className="inline-flex flex-col items-center justify-center rounded-xl bg-[#8F1747] px-8 py-4 text-center text-white transition hover:bg-[#73133a]"
           >
-            Centro Sociosanitario
+            <span className="text-lg font-bold">
+              Centro Sociosanitario
+            </span>
+            <span className="text-sm font-semibold text-white/90">
+              Logopedia, psicología y atención temprana
+            </span>
           </HashLink>
         </div>
 
@@ -64,7 +77,11 @@ const Hero = () => {
             rel="noreferrer"
             className="inline-flex items-center gap-3 rounded-xl bg-green-500 px-6 py-3 text-base font-bold text-white transition hover:bg-green-600"
           >
-            <img src="/whatsapp.png" alt="WhatsApp" className="h-5 w-5 object-contain" />
+            <img
+              src="/whatsapp.png"
+              alt="WhatsApp"
+              className="h-5 w-5 object-contain"
+            />
             WhatsApp
           </a>
 
