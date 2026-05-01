@@ -2,7 +2,7 @@ const reviews = [
   {
     text: 'Desde el primer día nos sentimos muy acompañados. Han ayudado muchísimo a nuestro hijo con el lenguaje y la comunicación. El trato es cercano, profesional y muy humano. Sin duda, un centro totalmente recomendable.',
     name: 'María G.',
-    time: 'Hace 2 meses',
+    time: 'Hace 1 año',
   },
   {
     text: 'Acudí por recomendación y ha sido un acierto. Me han ayudado a gestionar la ansiedad y mejorar mi bienestar emocional. Grandes profesionales, muy cercanos y atentos en todo momento.',

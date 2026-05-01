@@ -1,72 +1,80 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+import { FaFacebookF } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className="bg-[#8F1747] text-white">
       <div className="mx-auto max-w-7xl px-4 py-16">
-        <div className="grid gap-12 md:grid-cols-2 md:items-start">
+        
+        {/* GRID */}
+        <div className="grid gap-12 md:grid-cols-2">
           
           {/* IZQUIERDA */}
           <div>
-            <p className="max-w-2xl text-xl leading-relaxed text-white/90">
-              Centro de logopedia, psicología y atención temprana en Parla.
+            <h3 className="text-2xl font-extrabold">Edukatek</h3>
+
+            <p className="mt-4 text-white/90 leading-7">
+              Dos centros especializados en Parla: atención sociosanitaria y apoyo educativo.
               Acompañamos a niños, adolescentes y familias en su desarrollo,
-              comunicación y bienestar emocional.
+              aprendizaje y bienestar.
             </p>
 
-            <div className="mt-8 flex items-center gap-5">
-              <a href="#" aria-label="Facebook" className="text-2xl text-white/80 transition hover:text-white">
+            <div className="mt-6">
+              <a
+                href="https://www.facebook.com/edukatekcentrosociosanitario"
+                target="_blank"
+                rel="noreferrer"
+                className="text-3xl text-white/80 transition hover:text-white"
+              >
                 <FaFacebookF />
-              </a>
-              <a href="#" aria-label="Instagram" className="text-2xl text-white/80 transition hover:text-white">
-                <FaInstagram />
-              </a>
-              <a href="#" aria-label="LinkedIn" className="text-2xl text-white/80 transition hover:text-white">
-                <FaLinkedinIn />
               </a>
             </div>
           </div>
 
           {/* DERECHA */}
           <div className="text-left md:text-right">
-            <h3 className="text-3xl font-bold text-white">Contacto</h3>
+            <h3 className="text-xl font-bold">Contacto</h3>
 
-            <div className="mt-6 space-y-4 text-xl leading-relaxed text-white/90">
-              <p>Calle de Ciudad Real, 6, 28980 Parla, Madrid</p>
+            <div className="mt-4 space-y-3 text-white/90">
+              <p>📍 C/ Ciudad Real, 6 – Parla</p>
+              <p>📍 C/ Cuenca, 36 – Parla</p>
 
-              <p>
-                <a href="tel:627408088" className="transition hover:text-white">
-                  627 408 088
-                </a>
-              </p>
+              <a href="tel:34627408088" className="block hover:text-white">
+                📞 627 40 80 88
+              </a>
 
-              <p>
-                <a
-                  href="mailto:info@edukatekparla.es"
-                  className="transition hover:text-white"
-                >
-                  info@edukatekparla.es
-                </a>
-              </p>
+              <a
+                href="mailto:info@edukatekparla.es"
+                className="block hover:text-white"
+              >
+                ✉️ info@edukatekparla.es
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/20 pt-8 text-center">
-          <p className="text-lg text-white/90">
+        {/* LEGAL */}
+        <div className="mt-14 border-t border-white/20 pt-8 text-center">
+          <p className="text-sm text-white/80">
             © 2026 Edukatek Parla. Todos los derechos reservados.
           </p>
 
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-base text-white/80">
-            <a href="#" className="transition hover:text-white">
+          <div className="mt-4 flex flex-wrap justify-center gap-6 text-sm text-white/80">
+            <Link to="/legal" className="hover:text-white">
               Política de cookies
-            </a>
-            <a href="#" className="transition hover:text-white">
+            </Link>
+
+            <Link to="/legal" className="hover:text-white">
               Política de privacidad
-            </a>
-            <a href="#" className="transition hover:text-white">
+            </Link>
+
+            <Link to="/legal" className="hover:text-white">
               Aviso legal
-            </a>
+            </Link>
+
+            <Link to="/legal" className="hover:text-white">
+              Centro autorizado
+            </Link>
           </div>
         </div>
       </div>

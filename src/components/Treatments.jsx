@@ -1,84 +1,104 @@
-const services = [
+import { HashLink } from 'react-router-hash-link'
+const centers = [
   {
-    title: 'Logopedia',
+    title: 'Centro Sociosanitario',
+    subtitle: 'Logopedia, psicología y terapias infantiles',
     description:
-      'Evaluación e intervención en dificultades del habla, lenguaje, comunicación, voz, lectura, escritura y deglución, tanto en niños como en adultos.',
-    image:
-      'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80',
+      'Atención personalizada para niños, adolescentes, adultos y familias. Especialistas en logopedia, psicología, fisioterapia, terapia ocupacional e integración sensorial.',
+    services: [
+      'Logopedia',
+      'Psicología',
+      'Fisioterapia',
+      'Terapia Ocupacional',
+      'Integración Sensorial',
+    ],
+    image: '/centro-sociosanitario.jpeg',
+    link: '/centro-sociosanitario#centro-sociosanitario',
+    button: 'Ver centro sociosanitario',
   },
   {
-    title: 'Psicología infantil, adolescentes y adultos',
+    title: 'Centro de Estudios',
+    subtitle: 'Apoyo escolar, inglés y talleres',
     description:
-      'Acompañamiento psicológico personalizado para trabajar emociones, conducta, autoestima, ansiedad, dificultades familiares y bienestar personal.',
-    image:
-      'https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    title: 'Atención Temprana',
-    description:
-      'Intervención especializada para favorecer el desarrollo global de los niños en sus primeras etapas, apoyando también a las familias.',
-    image:
-      'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    title: 'Psicomotricidad y estimulación sensorial',
-    description:
-      'Sesiones orientadas a mejorar la coordinación, el movimiento, la autonomía, la integración sensorial y el desarrollo corporal del niño.',
-    image:
-      'https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=900&q=80',
+      'Acompañamos a cada alumno para mejorar su rendimiento, confianza y hábitos de estudio mediante grupos reducidos y atención personalizada.',
+    services: [
+      'Apoyo escolar',
+      'Infantil y Primaria',
+      'ESO y Bachillerato',
+      'Inglés',
+      'Talleres para mayores',
+    ],
+    image: '/centro-estudios.jpg',
+    link: '/centro-estudios#centro-estudios',
+    button: 'Ver centro de estudios',
   },
 ]
 
 const Treatments = () => {
   return (
-    <section id="servicios" className="scroll-mt-28 bg-[#fff7fb] py-24">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-16 text-center">
-          <h2 className="text-3xl font-extrabold text-[#D23372] sm:text-4xl">
-            Nuestros servicios
+    <section id="servicios" className="scroll-mt-28 bg-[#fff7fb] px-4 py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-14 text-center">
+          <p className="text-sm font-bold uppercase tracking-widest text-[#D23372]">
+            Nuestros centros
+          </p>
+
+          <h2 className="mt-3 text-3xl font-extrabold text-[#8F1747] sm:text-5xl">
+            Elige el centro que necesitas
           </h2>
 
-          <p className="mt-4 text-lg text-neutral-600 sm:text-xl">
-            Terapias personalizadas para acompañar el desarrollo, la comunicación
-            y el bienestar emocional de niños, adolescentes, adultos y familias.
+          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-600">
+            EDUKATEK cuenta con dos espacios especializados en Parla: uno
+            sociosanitario y otro educativo, ambos con atención cercana,
+            profesional y personalizada.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="flex overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(210,51,114,0.12)] transition hover:shadow-[0_15px_40px_rgba(210,51,114,0.18)]"
+        <div className="grid gap-8 lg:grid-cols-2">
+          {centers.map((center) => (
+            <article
+              key={center.title}
+              className="overflow-hidden rounded-3xl bg-white shadow-xl transition hover:-translate-y-2 hover:shadow-2xl"
             >
-              <div className="w-[40%]">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="h-full w-full object-cover"
-                />
-              </div>
+              <img
+                src={center.image}
+                alt={center.title}
+                className="h-72 w-full object-cover"
+              />
 
-              <div className="flex w-[60%] flex-col justify-between p-6">
-                <div>
-                  <h3 className="text-xl font-extrabold text-[#8F1747] sm:text-2xl">
-                    {service.title}
-                  </h3>
+              <div className="p-8">
+                <p className="text-sm font-bold uppercase tracking-widest text-[#D23372]">
+                  {center.subtitle}
+                </p>
 
-                  <p className="mt-3 text-base leading-8 text-neutral-600 sm:text-lg">
-                    {service.description}
-                  </p>
+                <h3 className="mt-3 text-3xl font-extrabold text-[#8F1747]">
+                  {center.title}
+                </h3>
+
+                <p className="mt-4 text-lg leading-8 text-gray-700">
+                  {center.description}
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-3">
+                  {center.services.map((service) => (
+                    <span
+                      key={service}
+                      className="rounded-full bg-[#FFF7FB] px-4 py-2 text-sm font-semibold text-[#8F1747]"
+                    >
+                      {service}
+                    </span>
+                  ))}
                 </div>
 
-                <div className="mt-6">
-                  <a
-                    href="#contacto"
-                    className="inline-flex items-center gap-2 text-base font-semibold text-[#D23372] transition hover:text-[#8F1747]"
-                  >
-                    Más información →
-                  </a>
-                </div>
+                <HashLink
+  smooth
+  to={center.link}
+  className="mt-8 inline-flex rounded-xl bg-[#D23372] px-7 py-4 text-base font-bold text-white transition hover:bg-[#8F1747]"
+>
+  {center.button}
+</HashLink>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
