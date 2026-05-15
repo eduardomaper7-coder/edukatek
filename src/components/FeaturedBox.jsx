@@ -26,8 +26,8 @@ const FeaturedBox = () => {
               </h2>
 
               <p className="mt-4 text-sm leading-7 text-neutral-600 sm:text-lg">
-                En nuestro centro trabajamos de forma cercana con niños, adolescentes,
-                adultos y familias para mejorar la comunicación, el aprendizaje, la
+                En nuestro centro trabajamos de forma cercana con niños, adolescentes
+                y familias para mejorar la comunicación, el aprendizaje, la
                 conducta y el bienestar emocional.
               </p>
 

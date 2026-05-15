@@ -44,10 +44,10 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:info@edukatekparla.es"
+                href="mailto:edukateksociosanitario@gmail.com"
                 className="block hover:text-white"
               >
-                ✉️ info@edukatekparla.es
+                ✉️ edukateksociosanitario@gmail.com
               </a>
             </div>
           </div>

@@ -21,7 +21,7 @@ const LogopediaSection = () => {
             <p className="mt-6 text-lg leading-8 text-gray-700">
               Tratamos dificultades relacionadas con el lenguaje, la comunicación,
               el habla, la audición, la voz y la deglución, desde la infancia hasta
-              la tercera edad.
+              la adolescencia.
             </p>
 
             <p className="mt-4 text-lg leading-8 text-gray-700">
@@ -107,7 +107,10 @@ const LogopediaSection = () => {
                   <span className="text-sm font-extrabold text-[#D23372]">
                     0{index + 1}
                   </span>
-                  <p className="mt-2 font-bold text-[#8F1747]">{step}</p>
+
+                  <p className="mt-2 font-bold text-[#8F1747]">
+                    {step}
+                  </p>
                 </div>
               ))}
             </div>
@@ -123,22 +126,25 @@ const LogopediaSection = () => {
             </p>
 
             <h3 className="mt-3 text-3xl font-extrabold text-[#8F1747] sm:text-4xl">
-              Logopedia para todas las edades
+              Logopedia para infancia y adolescencia
             </h3>
           </div>
 
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
             
             {/* INFANTIL */}
             <div className="rounded-3xl border border-[#D23372]/10 bg-white p-8 shadow-lg">
               <div className="mb-5 text-2xl">🧒</div>
+
               <h4 className="text-2xl font-extrabold text-[#8F1747]">
                 Infantil
               </h4>
+
               <p className="mt-2 text-sm font-semibold text-[#D23372]">
                 Atención temprana
               </p>
-              <ul className="mt-5 space-y-2 text-gray-700 text-sm">
+
+              <ul className="mt-5 space-y-2 text-sm text-gray-700">
                 <li>Lenguaje y habla</li>
                 <li>Deglución atípica</li>
                 <li>Lectoescritura</li>
@@ -146,37 +152,23 @@ const LogopediaSection = () => {
               </ul>
             </div>
 
-            {/* ADULTOS */}
+            {/* ADOLESCENCIA */}
             <div className="rounded-3xl border border-[#D23372]/10 bg-white p-8 shadow-lg">
-              <div className="mb-5 text-2xl">👥</div>
-              <h4 className="text-2xl font-extrabold text-[#8F1747]">
-                Adultos
-              </h4>
-              <p className="mt-2 text-sm font-semibold text-[#D23372]">
-                Rehabilitación
-              </p>
-              <ul className="mt-5 space-y-2 text-gray-700 text-sm">
-                <li>Tartamudez</li>
-                <li>Ictus</li>
-                <li>Alteraciones orofaciales</li>
-                <li>Reeducación auditiva</li>
-              </ul>
-            </div>
+              <div className="mb-5 text-2xl">🧑‍🎓</div>
 
-            {/* MAYORES */}
-            <div className="rounded-3xl border border-[#D23372]/10 bg-white p-8 shadow-lg">
-              <div className="mb-5 text-2xl">🤝</div>
               <h4 className="text-2xl font-extrabold text-[#8F1747]">
-                Tercera edad
+                Adolescencia
               </h4>
+
               <p className="mt-2 text-sm font-semibold text-[#D23372]">
-                Acompañamiento
+                Comunicación y aprendizaje
               </p>
-              <ul className="mt-5 space-y-2 text-gray-700 text-sm">
-                <li>Disfagia</li>
-                <li>Alzheimer / Parkinson</li>
-                <li>Lenguaje tras ictus</li>
-                <li>Apoyo a familiares</li>
+
+              <ul className="mt-5 space-y-2 text-sm text-gray-700">
+                <li>Dificultades de expresión oral</li>
+                <li>Comprensión y lectoescritura</li>
+                <li>Comunicación y habilidades sociales</li>
+                <li>Apoyo en dificultades académicas</li>
               </ul>
             </div>
           </div>

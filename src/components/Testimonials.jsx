@@ -1,17 +1,17 @@
 const reviews = [
   {
-    text: 'Desde el primer día nos sentimos muy acompañados. Han ayudado muchísimo a nuestro hijo con el lenguaje y la comunicación. El trato es cercano, profesional y muy humano. Sin duda, un centro totalmente recomendable.',
-    name: 'María G.',
+    text: 'No tengo más que buenas palabras para el equipo de Edukatek, desde Teresa la directora, hasta Marta y cada una de las que componen todas las terapias que cubren en este centro. Sois sencillamente maravillosas, mi hija os adora y yo, como madre, estoy enormemente satisfecha con vuestro trabajo, cariño y profesionalidad. Dais todo y eso no siempre se encuentra. Gracias chicas, así da gusto. Un abrazote os mando.',
+    name: 'Sonia Molinero',
     time: 'Hace 1 año',
   },
   {
-    text: 'Acudí por recomendación y ha sido un acierto. Me han ayudado a gestionar la ansiedad y mejorar mi bienestar emocional. Grandes profesionales, muy cercanos y atentos en todo momento.',
-    name: 'Carlos R.',
+    text: 'Atención muy personalizada, trato amable y muy profesional.',
+    name: 'Sandra F.',
     time: 'Hace 1 mes',
   },
   {
-    text: 'Un equipo increíble. Nos orientan en todo momento como familia y vemos avances reales en nuestro hijo. Se nota que trabajan con vocación y mucha dedicación.',
-    name: 'Laura P.',
+    text: 'Profesionales responsables y comprometidas, un centro recomendadísimo.',
+    name: 'Patricia Yomisma',
     time: 'Hace 3 meses',
   },
 ]

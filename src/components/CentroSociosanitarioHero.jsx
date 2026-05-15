@@ -30,7 +30,7 @@ const CentroSociosanitarioHero = () => {
         </h1>
 
         <p className="mt-7 max-w-3xl text-lg leading-9 text-white/95 sm:text-xl">
-          Atención personalizada para niños, adolescentes, adultos y familias.
+          Atención personalizada para niños, adolescentes y familias.
           Evaluamos, intervenimos y acompañamos cada caso con un enfoque cercano,
           profesional y coordinado.
         </p>

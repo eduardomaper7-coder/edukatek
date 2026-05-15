@@ -6,7 +6,6 @@ const FisioterapiaSection = () => {
     'Fisioterapia respiratoria',
     'Lesiones neurológicas',
     'Fisioterapia traumatológica',
-    'Punción seca',
   ]
 
   return (
@@ -23,6 +22,7 @@ const FisioterapiaSection = () => {
               alt="Sesión de fisioterapia en Edukatek"
               className="h-[450px] w-full rounded-3xl object-cover shadow-2xl"
             />
+
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
 
@@ -33,7 +33,7 @@ const FisioterapiaSection = () => {
             </p>
 
             <h2 className="mt-3 text-4xl font-extrabold text-[#8F1747] sm:text-5xl">
-              Fisioterapia infantil y general en Parla
+              Fisioterapia infantil en Parla
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-700">
@@ -85,16 +85,14 @@ const FisioterapiaSection = () => {
           </div>
 
           {/* GRID SIMÉTRICO */}
-          <div className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-6">
-            
-            {tratamientos.map((item, index) => (
+          <div className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2">
+
+            {tratamientos.map((item) => (
               <div
                 key={item}
-                className={`group rounded-3xl bg-white p-8 text-center shadow-lg transition hover:-translate-y-2 hover:shadow-2xl lg:col-span-2 ${
-                  index === 3 ? 'lg:col-start-2' : ''
-                }`}
+                className="group rounded-3xl bg-white p-8 text-center shadow-lg transition hover:-translate-y-2 hover:shadow-2xl"
               >
-                {/* Línea decorativa en vez de icono */}
+                {/* Línea decorativa */}
                 <div className="mx-auto h-1 w-12 rounded-full bg-[#D23372]"></div>
 
                 <p className="mt-6 text-lg font-semibold text-gray-900">

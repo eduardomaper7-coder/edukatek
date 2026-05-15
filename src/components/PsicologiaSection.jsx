@@ -23,17 +23,6 @@ const PsicologiaSection = () => {
         'Apoyo en dinámicas familiares',
       ],
     },
-    {
-      title: 'Área de adultos',
-      subtitle: 'Bienestar emocional',
-      items: [
-        'Ansiedad',
-        'Depresión',
-        'Intervención familiar',
-        'Estimulación cognitiva para adultos mayores',
-        'Atención, memoria y lenguaje',
-      ],
-    },
   ]
 
   return (
@@ -46,11 +35,11 @@ const PsicologiaSection = () => {
             </p>
 
             <h2 className="mt-3 text-4xl font-extrabold text-[#8F1747] sm:text-5xl">
-              Psicología infantil, familiar y de adultos en Parla
+              Psicología infantil, adolescente y familiar en Parla
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-700">
-              Acompañamos a niños, adolescentes, adultos y familias para mejorar
+              Acompañamos a niños, adolescentes y familias para mejorar
               el bienestar emocional, la conducta, el aprendizaje y las relaciones.
             </p>
 
@@ -84,6 +73,7 @@ const PsicologiaSection = () => {
               alt="Psicología en Edukatek"
               className="h-[460px] w-full rounded-3xl object-cover shadow-2xl"
             />
+
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
         </div>
@@ -99,7 +89,7 @@ const PsicologiaSection = () => {
             </h3>
           </div>
 
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
             {areas.map((area) => (
               <div
                 key={area.title}

@@ -22,6 +22,7 @@ const Navbar = () => {
         </HashLink>
 
         <nav className="hidden items-center gap-6 md:flex">
+          
           <HashLink
             smooth
             to="/#inicio"
@@ -38,20 +39,22 @@ const Navbar = () => {
             Servicios
           </HashLink>
 
+          {/* CALLE CUENCA */}
           <HashLink
             smooth
             to="/centro-estudios#centro-estudios"
             className="text-base font-semibold text-black transition hover:text-[#D23372]"
           >
-            Centro de Estudios
+            Sociosanitario Calle Cuenca
           </HashLink>
 
+          {/* CALLE CIUDAD REAL */}
           <HashLink
             smooth
             to="/centro-sociosanitario#centro-sociosanitario"
             className="text-base font-semibold text-black transition hover:text-[#D23372]"
           >
-            Centro Sociosanitario
+            Sociosanitario Calle Ciudad Real
           </HashLink>
 
           <HashLink
@@ -74,6 +77,7 @@ const Navbar = () => {
             alt="WhatsApp"
             className="h-5 w-5 object-contain"
           />
+
           Pedir información
         </a>
       </div>

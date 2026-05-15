@@ -1,22 +1,38 @@
 import Navbar from '../components/Navbar'
 import TopBar from '../components/TopBar'
 import Footer from '../components/Footer'
+
 import CentroEstudiosHero from '../components/CentroEstudiosHero'
+
+import LogopediaSection from '../components/LogopediaSection'
+import PsicologiaSection from '../components/PsicologiaSection'
+
 import ApoyoEscolarSection from '../components/ApoyoEscolarSection'
 import InglesSection from '../components/InglesSection'
-import TalleresSection from '../components/TalleresSection'
+import AutorizacionesCuencaSection from '../components/AutorizacionesCuencaSection'
 import MapCentroEstudios from '../components/MapCentroEstudios'
-<section id="hero-estudios" className="..."></section>
+
 const CentroEstudios = () => {
   return (
     <main className="bg-white text-black">
       <TopBar />
+
       <Navbar />
+
       <CentroEstudiosHero />
+<AutorizacionesCuencaSection />
+      {/* NUEVAS SECCIONES */}
+      <LogopediaSection />
+
+      <PsicologiaSection />
+
+      {/* SECCIONES EXISTENTES */}
       <ApoyoEscolarSection />
+
       <InglesSection />
-      <TalleresSection />
+
       <MapCentroEstudios />
+
       <Footer />
     </main>
   )

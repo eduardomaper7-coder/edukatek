@@ -15,7 +15,7 @@ const Legal = () => {
           <ul className="mt-6 space-y-2 text-gray-700">
             <li><strong>Denominación:</strong> EDUKATEK</li>
             <li><strong>Domicilio:</strong> Calle Ciudad Real, 6, Parla, Madrid</li>
-            <li><strong>Email:</strong> info@edukatekparla.es</li>
+            <li><strong>Email:</strong> edukateksociosanitario@gmail.com</li>
             <li><strong>Teléfono:</strong> 627 40 80 88</li>
           </ul>
 

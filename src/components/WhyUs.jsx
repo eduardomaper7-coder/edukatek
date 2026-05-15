@@ -82,7 +82,7 @@ const WhyUs = () => {
                   Trato cercano y humano
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Creamos un espacio seguro, amable y de confianza para niños, adolescentes y adultos.
+                  Creamos un espacio seguro, amable y de confianza para niños, adolescentes y familias.
                 </p>
               </div>
             </div>

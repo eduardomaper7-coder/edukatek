@@ -134,10 +134,10 @@ const ContactSection = () => {
                 <div>
                   <p className="font-bold text-[#8F1747]">Email</p>
                   <a
-                    href="mailto:info@edukatekparla.es"
+                    href="mailto:edukateksociosanitario@gmail.com"
                     className="mt-1 block text-lg text-neutral-700 transition hover:text-[#D23372]"
                   >
-                    info@edukatekparla.es
+                    edukateksociosanitario@gmail.com
                   </a>
                 </div>
               </div>

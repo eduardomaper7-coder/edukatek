@@ -11,6 +11,7 @@ import BlogSection from './components/BlogSection'
 import Location from './components/Location'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import AyudasSection from './components/AyudasSection'
 
 import Legal from './pages/Legal'
 import CentroEstudios from './pages/CentroEstudios'
@@ -28,6 +29,7 @@ const Home = () => {
 
       <Treatments />
       <WhyUs />
+      <AyudasSection />
       <Testimonials />
       <FeaturedBox />
       <BlogSection />
