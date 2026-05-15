@@ -6,7 +6,7 @@ const centers = [
     link: 'https://www.google.com/maps/dir/?api=1&destination=Calle+de+Cdad.+Real,+6,+28980+Parla,+Madrid',
   },
   {
-    name: 'Centro de Estudios',
+    name: 'Centro sociosanitario y de estudios',
     address: 'C. de Cuenca, 36, 28982 Parla, Madrid',
     map: 'https://www.google.com/maps?q=Calle+de+Cuenca,+36,+28982+Parla,+Madrid&output=embed',
     link: 'https://www.google.com/maps/dir/?api=1&destination=Calle+de+Cuenca,+36,+28982+Parla,+Madrid',

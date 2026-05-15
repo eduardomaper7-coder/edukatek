@@ -71,7 +71,7 @@ const ContactSection = () => {
           {/* Centro de estudios */}
           <div className="rounded-3xl bg-white p-7 shadow-[0_10px_30px_rgba(210,51,114,0.12)]">
             <h3 className="text-2xl font-extrabold text-[#8F1747]">
-              Centro de Estudios
+              Centro sociosanitario y de estudios
             </h3>
 
             <div className="mt-6 space-y-5">
