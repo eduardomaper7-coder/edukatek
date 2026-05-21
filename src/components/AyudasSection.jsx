@@ -1,3 +1,5 @@
+import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa'
+
 const ayudas = [
   {
     title: 'Necesidad de Atención Temprana',
@@ -24,11 +26,23 @@ const ayudas = [
     description:
       'Acompañamiento en solicitudes, revisiones y recursos relacionados con dependencia.',
   },
+  {
+    title: 'Solicitud Becas ACMEE y comedor',
+    description:
+      'Gestión, orientación y apoyo en la tramitación de becas ACMEE y ayudas de comedor escolar para familias.',
+  },
 ]
 
 const AyudasSection = () => {
+  const whatsappMessage = encodeURIComponent(
+    'Hola, me gustaría recibir información sobre ayudas y prestaciones.'
+  )
+
   return (
-    <section className="bg-[#FFF7FB] px-4 py-24">
+    <section
+      id="ayudas"
+      className="scroll-mt-28 bg-[#FFF7FB] px-4 py-24"
+    >
       <div className="mx-auto max-w-7xl">
 
         {/* CABECERA */}
@@ -76,27 +90,61 @@ const AyudasSection = () => {
         </div>
 
         {/* AYUDAS */}
-<div className="mt-20">
+        <div className="mt-20">
 
-  <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-6">
-    {ayudas.map((item, index) => (
-      <div
-        key={item.title}
-        className={`rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl lg:col-span-2 ${
-          index === 3 ? 'lg:col-start-2' : ''
-        }`}
-      >
-        <div className="h-1 w-14 rounded-full bg-[#D23372]"></div>
+          <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-6">
+            {ayudas.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl lg:col-span-2"
+              >
+                <div className="h-1 w-14 rounded-full bg-[#D23372]"></div>
 
-        <h3 className="mt-6 text-2xl font-extrabold text-[#8F1747]">
-          {item.title}
-        </h3>
+                <h3 className="mt-6 text-2xl font-extrabold text-[#8F1747]">
+                  {item.title}
+                </h3>
 
-        <p className="mt-4 leading-7 text-gray-700">
-          {item.description}
-        </p>
-      </div>
-    ))}
+                <p className="mt-4 leading-7 text-gray-700">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CONTACTO */}
+<div className="mt-16 mb-0 text-center">
+
+  <h3 className="text-2xl font-extrabold text-[#8F1747]">
+    ¿Necesitas ayuda personalizada?
+  </h3>
+
+  <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-gray-700">
+    Contáctanos y te orientaremos sobre la ayuda, beca o prestación
+    que mejor se adapte a tu situación.
+  </p>
+
+  <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+
+    {/* WHATSAPP */}
+    <a
+      href={`https://wa.me/34627408088?text=${whatsappMessage}`}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3 text-base font-bold text-white transition hover:bg-[#1ebe5d]"
+    >
+      <FaWhatsapp className="text-xl" />
+      WhatsApp
+    </a>
+
+    {/* LLAMAR */}
+    <a
+      href="tel:627408088"
+      className="inline-flex items-center gap-2 rounded-xl bg-[#D23372] px-6 py-3 text-base font-bold text-white transition hover:bg-[#8F1747]"
+    >
+      <FaPhoneAlt className="text-lg" />
+      Llamar
+    </a>
   </div>
 </div>
 

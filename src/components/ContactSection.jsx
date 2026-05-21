@@ -91,7 +91,7 @@ const ContactSection = () => {
                       (day) => (
                         <div key={day} className="flex justify-between gap-4">
                           <span>{day}</span>
-                          <span className="text-right">9:00–14:00 / 16:00–22:00</span>
+                          <span className="text-right">15:00–20:30</span>
                         </div>
                       )
                     )}

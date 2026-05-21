@@ -43,14 +43,15 @@ const Hero = () => {
   </span>
 
   <span className="mt-2 block px-2 text-4xl sm:whitespace-nowrap sm:text-5xl lg:text-6xl">
-    Logopedia y psicología
+    Logopedia y Psicología
   </span>
 </h1>
 
 {/* SUBTÍTULO */}
 <p className="mt-6 max-w-3xl px-4 text-center text-base leading-7 text-white/95 sm:text-xl sm:leading-8">
-  Dos centros sociosanitarios especializados en Parla: logopedia, psicología y atención
-  temprana, y apoyo escolar, inglés y técnicas de estudio.
+  Dos centros sociosanitarios especializados en Parla: atención temprana,
+  logopedia, psicología, integración sensorial, terapia ocupacional,
+  reeducación pedagógica, técnicas de estudio e inglés.
 </p>
 
 {/* RECUADROS */}
@@ -135,9 +136,7 @@ const Hero = () => {
   </a>
 </div>
 
-        <p className="mt-4 text-sm text-white/90">
-          📞 Este teléfono y WhatsApp sirven para ambos centros
-        </p>
+        
 
         <a
           href="#servicios"
