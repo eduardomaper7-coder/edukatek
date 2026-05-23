@@ -27,9 +27,9 @@ const ayudas = [
       'Acompañamiento en solicitudes, revisiones y recursos relacionados con dependencia.',
   },
   {
-    title: 'Solicitud Becas ACMEE y comedor',
+    title: 'Solicitud Becas ACNEAE y comedor',
     description:
-      'Gestión, orientación y apoyo en la tramitación de becas ACMEE y ayudas de comedor escolar para familias.',
+      'Gestión, orientación y apoyo en la tramitación de becas ACNEAE y ayudas de comedor escolar para familias.',
   },
 ]
 
